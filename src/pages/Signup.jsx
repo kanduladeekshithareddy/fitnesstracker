@@ -1,26 +1,35 @@
 import React from 'react'
 import styled from 'styled-components'
 import Backimg from '../components/Backimg'
-export default function Login() {
+export default function Signup() {
   return (
     <Container>
       <Backimg/>
       <div className="formcontainer">
         <form action="" className="inner-form">
-          <label htmlFor="username" className="formlabel">Username:</label>
+          <label htmlFor="username" className="formlabel">First Name:</label>
           <input type="text" className="username" />
+          <label htmlFor="lastname" className="formlabel">Last Name:</label>
+          <input type="text" className="lname" />
+          <label htmlFor="email" className="formlabel">Email:</label>
+          <input type="email" className='email'/>
+          <label htmlFor="phonenum" className='phonenum'>Phone number:</label>
+          <input type="text" className="phonenum" />
           <label htmlFor="password" className="formlabel">Password:</label>
           <input type="password" className="password" />
-          <a href="/signup">Don't have an account?</a>
-          <button className="login">Login</button>
+          <label htmlFor="password" className="formlabel">Confirm Password :</label>
+          <input type="password" className="password" />
+          <a href="/login">Already have an account?</a>
+          <button className="login">Sign Up</button>
         </form>
       </div>
     </Container>
   )
 }
 const Container=styled.div`
-    body{
+ body{
       overflow:hidden;
+      color:white;
     }
     .formcontainer{
       /* background-color:red; */
@@ -50,7 +59,10 @@ const Container=styled.div`
       border-bottom:2px solid white;
       background-color:transparent;
       margin-bottom:5px;
-      width:20vw;
+      width:25vw;
+    }
+    input[type="text"] {
+      color: beige; 
     }
     a{
       padding:1em;

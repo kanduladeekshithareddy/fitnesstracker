@@ -13,7 +13,7 @@ export default function Navbar() {
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Login</a></li>
-                    <li><a href="#">Signup</a></li>
+                    {/* <li><a href="#">Signup</a></li> */}
                 </ul>
             </div>
         </nav>
@@ -46,12 +46,12 @@ const Container=styled.div`
         font-family:monospace;
         text-align: center;
         /* background-color: aqua; */
-        margin:0.75rem;
+        /* margin:0.75rem; */
         display:inline-flex;
         padding: 5px;
         position:absolute;
         font-size: large;
-        font-weight: 600;
+        font-weight: 500;
         /* position:absolute; */
     }
     .navbar-links a{
